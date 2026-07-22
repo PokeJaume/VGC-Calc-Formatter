@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VGC Calc Formatter - App Information</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #1a73e8;
+      --accent-soft: #e8f0fe;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #ffffff, #f3f7ff);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid #d2e3fc;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 13px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 21px;
+    }
+
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 16px;
+    }
+
+    p { margin: 0 0 10px; }
+
+    ul { margin: 8px 0 12px 20px; }
+
+    li { margin-bottom: 6px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f9fafb;
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    .footer {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .mono {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 13px;
+      background: #f4f4f5;
+      border: 1px solid #e4e4e7;
+      border-radius: 6px;
+      padding: 2px 6px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero" id="top">
+      <h1>VGC Calc Formatter</h1>
+      <p class="subtitle">Google Docs add-on for formatting and organizing VGC calculation text.</p>
+      <p class="meta">Last updated: July 22, 2026</p>
+    </header>
+
+    <nav class="nav" aria-label="Page navigation">
+      <a href="#overview">Overview</a>
+      <a href="#features">Features</a>
+      <a href="#workflow">How It Works</a>
+      <a href="#scopes">OAuth Scopes</a>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Service</a>
+      <a href="#support">Support</a>
+    </nav>
+
+    <section class="card" id="overview">
+      <h2>Overview</h2>
+      <p>
+        VGC Calc Formatter is an independent Google Docs add-on that helps users quickly format,
+        structure, and review Pokemon VGC calculation notes inside the active document.
+      </p>
+      <p>
+        The add-on provides a sidebar interface to insert section headers, classify calculation
+        blocks, and apply consistent visual formatting.
+      </p>
+    </section>
+
+    <section class="card" id="features">
+      <h2>Main Features</h2>
+      <ul>
+        <li>Insert standardized section headers for offensive and defensive calculation blocks.</li>
+        <li>Format selected text in place inside the active Google Doc.</li>
+        <li>Apply consistent styles for calculation readability.</li>
+        <li>Store per-user formatting preferences using Apps Script PropertiesService.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="workflow">
+      <h2>How It Works</h2>
+      <ol>
+        <li>User opens the add-on from the Google Docs add-on button or Extensions menu.</li>
+        <li>User opens the sidebar and selects a formatting action.</li>
+        <li>The add-on processes only the current active document and applies formatting.</li>
+        <li>User preferences are saved for future sessions.</li>
+      </ol>
+    </section>
+
+    <section class="card" id="scopes">
+      <h2>OAuth Scope Usage</h2>
+      <p>Requested scopes and why they are required:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Scope</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="mono">documents.currentonly</span></td>
+            <td>Read and modify only the currently active Google Document during user-triggered formatting actions.</td>
+          </tr>
+          <tr>
+            <td><span class="mono">script.storage</span></td>
+            <td>Store user-specific formatting preferences such as colors and thresholds in Apps Script properties.</td>
+          </tr>
+          <tr>
+            <td><span class="mono">script.locale</span></td>
+            <td>Use Google Workspace locale settings to support localized behavior.</td>
+          </tr>
+          <tr>
+            <td><span class="mono">script.container.ui</span></td>
+            <td>Render and control the add-on UI (menu and sidebar) inside Google Docs.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="privacy">
+      <h2>Privacy Policy</h2>
+      <h3>1. Overview</h3>
+      <p>
+        VGC Calc Formatter ("the Add-on") is a Google Docs editor add-on that helps users
+        format and organize Pokemon VGC calculation text directly inside the active document.
+      </p>
+
+      <h3>2. Data We Collect</h3>
+      <p><strong>We do not collect, store, transmit, or share personal data.</strong></p>
+      <ul>
+        <li>Processes only the current active document and only when the user triggers an action.</li>
+        <li>Stores user preferences in Google Apps Script PropertiesService.</li>
+        <li>Does not transmit document content to third parties.</li>
+      </ul>
+
+      <h3>3. Third-Party Services</h3>
+      <p>The add-on does not integrate with external third-party APIs for document processing.</p>
+
+      <h3>4. Contact</h3>
+      <p>Email: <a href="mailto:pokejaumes@gmail.com">pokejaumes@gmail.com</a></p>
+    </section>
+
+    <section class="card" id="terms">
+      <h2>Terms of Service</h2>
+      <p>
+        By using VGC Calc Formatter, you agree to use the add-on in compliance with Google Workspace
+        policies and applicable law.
+      </p>
+      <ul>
+        <li>The add-on is provided "as is" without warranties of any kind.</li>
+        <li>You are responsible for the content you create and edit in Google Docs.</li>
+        <li>The developer may update or discontinue features at any time.</li>
+        <li>Continued use after updates constitutes acceptance of revised terms.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="support">
+      <h2>Support and Attribution</h2>
+      <p>
+        For support requests or review-related questions, contact:
+        <a href="mailto:pokejaumes@gmail.com">pokejaumes@gmail.com</a>
+      </p>
+      <p>
+        Google Docs is a trademark of Google LLC. VGC Calc Formatter is an independent add-on
+        and is not affiliated with or endorsed by Google LLC.
+      </p>
+      <p class="footer"><a href="#top">Back to top</a></p>
+    </section>
+  </div>
+</body>
+</html>
