@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Política de Privacidad – VGC Calc Formatter</title>
+  <title>Privacy Policy – VGC Calc Formatter</title>
   <style>
     body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
     h1 { font-size: 1.8em; margin-bottom: 0.2em; }
@@ -14,95 +14,95 @@
 </head>
 <body>
 
-  <h1>Política de Privacidad</h1>
-  <p class="updated">Última actualización: 16 de agosto de 2026</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: August 16, 2026</p>
 
-  <h2>Resumen</h2>
+  <h2>Summary</h2>
   <p>
-    VGC Calc Formatter ("el complemento") es un complemento para Google Docs que ayuda a formatear y organizar notas de cálculo VGC dentro del documento activo. Esta política explica qué datos de Google accede el complemento, con qué fin, cómo se protegen, con quién (si alguien) se comparten y cómo solicitarlos o eliminarlos.
+    VGC Calc Formatter ("the add-on") is a Google Docs add-on that helps format and organize Pokémon VGC calculation notes within the active document. This policy explains which Google data the add-on accesses, why it is needed, how it is protected, with whom (if anyone) it is shared, and how to request access or deletion.
   </p>
 
-  <h2>Datos de Google a los que accede la aplicación</h2>
-  <p>El complemento solicita únicamente los permisos necesarios para ejecutar sus funciones dentro del documento activo. En concreto:</p>
+  <h2>Google data accessed by this application</h2>
+  <p>The add-on requests only the permissions necessary to provide its in-document features. Specifically:</p>
   <ul>
-    <li><strong>Contenido del documento actual</strong> — mediante el permiso <code>documents.currentonly</code> el complemento puede leer y modificar el contenido del documento de Google Docs que el usuario tiene abierto, solo cuando el usuario ejecuta una acción explícita de formateo o edición desde la interfaz del complemento.</li>
-    <li><strong>Preferencias del usuario</strong> — mediante <code>script.storage</code> el complemento almacena preferencias de formato (por ejemplo paletas, umbrales de color, opciones de estilo) en <em>PropertiesService</em> de Apps Script; estos datos se guardan en el entorno de Google asociado al complemento y se usan para recordar la configuración del usuario.</li>
-    <li><strong>Configuración regional</strong> — mediante <code>script.locale</code> el complemento obtiene la configuración regional/idioma necesaria para adaptar formatos y mensajes.</li>
-    <li><strong>Interfaz dentro del contenedor</strong> — mediante <code>script.container.ui</code> el complemento muestra y controla la barra lateral y los diálogos dentro de Google Docs.</li>
+    <li><strong>Active document content</strong> — via the <code>documents.currentonly</code> scope the add-on can read and modify the content of the Google Docs document the user currently has open, only when the user triggers an explicit formatting or edit action from the add-on UI.</li>
+    <li><strong>User preferences</strong> — via <code>script.storage</code> the add-on stores formatting preferences (for example palettes, color thresholds, style options) in Apps Script <em>PropertiesService</em>; these preferences are stored in the Google project environment associated with the add-on and are used to remember the user's settings.</li>
+    <li><strong>Locale / regional settings</strong> — via <code>script.locale</code> the add-on obtains the user's locale/language to adapt formats and messages.</li>
+    <li><strong>Container UI</strong> — via <code>script.container.ui</code> the add-on displays and controls its sidebar and dialogs inside Google Docs.</li>
   </ul>
-  <p>El complemento no solicita permisos para acceder a otros documentos ni a datos fuera del documento activo con <code>documents.currentonly</code>.</p>
+  <p>The add-on does not request access to other documents or broader Drive access; access is limited to the current document by <code>documents.currentonly</code>.</p>
 
-  <h2>Uso de los datos</h2>
-  <p>Los datos obtenidos mediante las APIs de Google se usan exclusivamente para proporcionar las funciones visibles y explícitas del complemento:</p>
+  <h2>Use of data</h2>
+  <p>Data obtained via Google APIs is used only to provide the visible and explicit functions of the add-on:</p>
   <ul>
-    <li>Leer el contenido seleccionado o del documento activo para analizar y aplicar el formato solicitado por el usuario (por ejemplo, convertir bloques de cálculo a una tabla o aplicar estilos).</li>
-    <li>Guardar y recuperar preferencias de formato del usuario para ofrecer una experiencia persistente y personalizada entre sesiones.</li>
-    <li>Adaptar la interfaz y el comportamiento según la configuración regional del usuario.</li>
+    <li>Read the selected content or the active document to analyze and apply the formatting requested by the user (for example, convert calculation blocks into tables or apply styles).</li>
+    <li>Save and retrieve user formatting preferences so the add-on provides a persistent, personalized experience across sessions.</li>
+    <li>Adapt the UI and behavior according to the user's locale settings.</li>
   </ul>
-  <p>El contenido de los documentos se procesa únicamente para ejecutar la acción solicitada por el usuario y no se utiliza para publicidad, venta de datos, creación de perfiles fuera del servicio, ni para entrenar modelos de IA.</p>
+  <p>Document content is processed only to perform the action requested by the user and is not used for advertising, selling data, profiling outside the service, or training AI models.</p>
   <p>
-    El uso que VGC Calc Formatter hace de la información recibida mediante las APIs de Google cumple con la <strong>Google API Services User Data Policy</strong>, incluidos los requisitos de <strong>Limited Use</strong>.
+    VGC Calc Formatter's use of information obtained via Google APIs complies with the <strong>Google API Services User Data Policy</strong>, including the <strong>Limited Use</strong> requirements.
   </p>
 
-  <h2>Compartición y transferencia de datos</h2>
+  <h2>Data sharing and transfer</h2>
   <p>
-    VGC Calc Formatter no vende, alquila ni comparte el contenido de los documentos de Google Docs ni otros datos obtenidos mediante las APIs de Google con terceros para fines comerciales.
+    VGC Calc Formatter does not sell, rent, or share document content or other Google data obtained via the Google APIs with third parties for commercial purposes.
   </p>
   <p>
-    El complemento no transmite el contenido de los documentos a servidores externos ni a servicios de terceros para su procesamiento. La ejecución del código del complemento se realiza mediante Google Apps Script, dentro de la infraestructura de Google, salvo recursos estáticos públicos necesarios para la interfaz, como imágenes de logotipo.
+    The add-on does not transmit document content to external servers or third-party services for processing. Code execution for the add-on runs in Google Apps Script within Google's infrastructure, except for public static resources required for the UI (for example logo images loaded from public URLs).
   </p>
 
-  <h2>Seguridad y protección de datos</h2>
+  <h2>Security and data protection</h2>
   <p>
-    Se aplican medidas razonables para proteger los datos tratados por el complemento:
+    Reasonable measures are applied to protect data handled by the add-on:
   </p>
   <ul>
-    <li>El complemento se ejecuta sobre la infraestructura de Google Apps Script y utiliza las protecciones y controles de acceso de Google Workspace (HTTPS, control de permisos OAuth y aislamiento en el entorno del script).</li>
-    <li>Las preferencias de usuario almacenadas en <em>PropertiesService</em> permanecen en el entorno de Google asociado al proyecto Apps Script y no se publican ni se exponen públicamente.</li>
-    <li>El desarrollador no solicita ni almacena contraseñas de Google ni credenciales de autenticación externas.</li>
+    <li>The add-on runs on Google Apps Script infrastructure and relies on Google Workspace protections and access controls (HTTPS, OAuth permission controls, and script environment isolation).</li>
+    <li>User preferences stored in <em>PropertiesService</em> remain in the Google project environment associated with the Apps Script project and are not publicly exposed.</li>
+    <li>The developer does not request or store Google passwords or external authentication credentials.</li>
   </ul>
 
-  <h2>Retención y eliminación de datos</h2>
+  <h2>Retention and deletion</h2>
   <p>
-    VGC Calc Formatter no conserva permanentemente copias del contenido de los documentos de Google Docs procesados. El contenido del documento se utiliza en memoria durante la ejecución de la acción solicitada y no se almacena en servidores externos.
+    VGC Calc Formatter does not retain permanent copies of processed Google Docs content. Document content is used in memory during execution of the requested action and is not stored on external servers.
   </p>
   <p>
-    Las preferencias del usuario almacenadas en <em>PropertiesService</em> se conservan mientras sean necesarias para proporcionar las funciones del complemento (por ejemplo, persistir configuraciones entre sesiones). El usuario puede solicitar la eliminación de estas preferencias contactando con el desarrollador en <strong>pokejaumes@gmail.com</strong>.
+    User preferences stored in <em>PropertiesService</em> are kept only as long as necessary to provide the add-on's features (for example to persist settings across sessions). Users may request deletion of these preferences by contacting the developer at <strong>pokejaumes@gmail.com</strong>.
   </p>
   <p>
-    Para solicitar la eliminación de datos o para cualquier consulta relacionada con la privacidad, contacte al desarrollador en <strong>pokejaumes@gmail.com</strong>. Las solicitudes serán atendidas en un plazo razonable y conforme a la legislación aplicable.
+    To request data deletion or for any privacy-related inquiries, contact the developer at <strong>pokejaumes@gmail.com</strong>. Requests will be handled in a timely manner and in accordance with applicable law.
   </p>
 
-  <h2>Credenciales de prueba e instrucciones para revisores</h2>
+  <h2>Test credentials and reviewer instructions</h2>
   <p>
-    Este complemento no requiere cuentas ni credenciales separadas: utiliza el inicio de sesión de Google (OAuth) para autorizar los permisos solicitados.
+    This add-on does not require separate test credentials: it uses Google sign-in (OAuth) to authorize the requested permissions.
   </p>
-  <p>Instrucciones para revisar el complemento:</p>
+  <p>Instructions for reviewers:</p>
   <ol>
-    <li>Abrir Google Docs con una cuenta de Google.</li>
-    <li>Instalar o desplegar el complemento (desde Marketplace o como proyecto de editor desplegado en draft).</li>
-    <li>Ir a <strong>Extensiones → VGC Calc Formatter</strong> y abrir la barra lateral.</li>
-    <li>Al abrir por primera vez, autorizar el flujo OAuth y mostrar la pantalla de consentimiento con los permisos solicitados; expandir "Show all services" si aparece y dejar los scopes visibles en pantalla.</li>
-    <li>Crear o abrir un documento de prueba con un bloque de texto de cálculo VGC, seleccionar el bloque y ejecutar la acción de formateo para demostrar <code>documents.currentonly</code>.</li>
-    <li>Modificar una preferencia en la barra lateral, cerrar y reabrir el documento para verificar que la preferencia persiste (demuestra <code>script.storage</code>).</li>
+    <li>Open Google Docs with a Google account.</li>
+    <li>Install or deploy the add-on (from the Marketplace or as a deployed editor add-on draft).</li>
+    <li>Go to <strong>Extensions → VGC Calc Formatter</strong> and open the sidebar.</li>
+    <li>On first open, authorize the OAuth flow and display the consent screen with requested permissions; expand "Show all services" if present and leave the scopes visible on screen.</li>
+    <li>Create or open a test document containing a block of VGC calculation text, select the block and run the formatting action to demonstrate <code>documents.currentonly</code>.</li>
+    <li>Change a preference in the sidebar, close and re-open the add-on to verify the preference persists (demonstrates <code>script.storage</code>).</li>
   </ol>
 
-  <h2>Consentimiento OAuth y uso de scopes</h2>
+  <h2>OAuth consent and scope usage</h2>
   <p>
-    Durante la autorización el usuario verá la pantalla de consentimiento de Google y los scopes solicitados. El complemento solicita los siguientes scopes mínimos y justificados:
+    During authorization the user will see the Google consent screen and the requested scopes. The add-on requests the following minimal, justified scopes:
   </p>
   <ul>
-    <li><code>documents.currentonly</code>: necesario para leer y aplicar cambios en el documento activo cuando el usuario lo solicita.</li>
-    <li><code>script.storage</code>: necesario para guardar preferencias de usuario en <em>PropertiesService</em>.</li>
-    <li><code>script.locale</code>: necesario para adaptar formatos y textos según la configuración regional del usuario.</li>
-    <li><code>script.container.ui</code>: necesario para mostrar la barra lateral y controles dentro de Google Docs.</li>
+    <li><code>documents.currentonly</code>: required to read and write changes to the active document when the user requests a formatting operation.</li>
+    <li><code>script.storage</code>: required to store user preferences in <em>PropertiesService</em>.</li>
+    <li><code>script.locale</code>: required to adapt formats and texts to the user's locale and regional settings.</li>
+    <li><code>script.container.ui</code>: required to display the sidebar and UI controls inside Google Docs.</li>
   </ul>
 
-  <h2>Cambios a esta política</h2>
-  <p>Si esta política se actualiza, la fecha de "Última actualización" se modificará. El uso continuado del complemento después de cambios constituye aceptación de la política revisada.</p>
+  <h2>Changes to this policy</h2>
+  <p>If this policy is updated, the "Last updated" date above will be revised. Continued use of the add-on after changes constitutes acceptance of the revised policy.</p>
 
-  <h2>Contacto</h2>
-  <p>Para preguntas, solicitudes de eliminación o asistencia respecto a privacidad, contacte a: <strong>pokejaumes@gmail.com</strong>.</p>
+  <h2>Contact</h2>
+  <p>For questions, deletion requests, or privacy assistance, contact: <strong>pokejaumes@gmail.com</strong>.</p>
 
 </body>
 </html>
